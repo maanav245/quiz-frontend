@@ -108,7 +108,7 @@ export default function Lesson({ lesson }: { lesson: Lesson }) {
       };
       console.log(reqObj);
       const response = await fetch(
-        "http://127.0.0.1:8000/quiz/submit-lesson/",
+        "http://maanav245.pythonanywhere.com/quiz/submit-lesson/",
         {
           method: "POST",
           headers: {

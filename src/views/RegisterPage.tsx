@@ -46,13 +46,16 @@ export default function SignUp() {
     event.preventDefault();
     console.log(registerForm);
     try {
-      const response = await fetch("http://127.0.0.1:8000/quiz/register/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(registerForm),
-      });
+      const response = await fetch(
+        "http://maanav245.pythonanywhere.com/quiz/register/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(registerForm),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
