@@ -42,7 +42,7 @@ export default function SignIn() {
     console.log(loginForm);
     try {
       const response = await fetch(
-        "http://maanav245.pythonanywhere.com/quiz/login/",
+        "https://maanav245.pythonanywhere.com/quiz/login/",
         {
           method: "POST",
           headers: {

@@ -64,7 +64,7 @@ export default function Dashboard() {
       console.log(`Token ` + token);
       try {
         const lessonsResponse = await fetch(
-          "http://maanav245.pythonanywhere.com/quiz/lessons/",
+          "https://maanav245.pythonanywhere.com/quiz/lessons/",
           {
             method: "GET",
             headers: {
@@ -82,7 +82,7 @@ export default function Dashboard() {
           console.log(responseData);
         }
         const statsResponse = await fetch(
-          "http://maanav245.pythonanywhere.com/quiz/user-stats/",
+          "https://maanav245.pythonanywhere.com/quiz/user-stats/",
           {
             method: "GET",
             headers: {
@@ -98,7 +98,7 @@ export default function Dashboard() {
           console.log(responseData);
         }
         const rankResponse = await fetch(
-          "http://maanav245.pythonanywhere.com/quiz/user-rankings/",
+          "https://maanav245.pythonanywhere.com/quiz/user-rankings/",
           {
             method: "GET",
             headers: {

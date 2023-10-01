@@ -47,7 +47,7 @@ export default function SignUp() {
     console.log(registerForm);
     try {
       const response = await fetch(
-        "http://maanav245.pythonanywhere.com/quiz/register/",
+        "https://maanav245.pythonanywhere.com/quiz/register/",
         {
           method: "POST",
           headers: {
